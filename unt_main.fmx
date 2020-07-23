@@ -1,0 +1,191 @@
+object frm_main: Tfrm_main
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = Single
+  Caption = 'Desenvolvido por Jefersson do Canal Jefersson Jeiel'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object toolbar: TRectangle
+    Align = Top
+    Fill.Color = xFF25D366
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Text1: TText
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 556.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'WhatsApp Send Messages'
+      TextSettings.Font.Family = 'Franklin Gothic'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Leading
+    end
+    object btn_close: TSpeedButton
+      Align = Right
+      Position.X = 576.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'stoptoolbutton'
+      OnClick = btn_closeClick
+    end
+  end
+  object Layout1: TLayout
+    Align = Center
+    Size.Width = 486.000000000000000000
+    Size.Height = 352.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Align = Top
+      Fill.Color = xFF075E54
+      Size.Width = 486.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Layout2: TLayout
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 466.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Text2: TText
+          Align = Left
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 79.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'N'#250'mero'
+          TextSettings.Font.Family = 'Franklin Gothic'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Leading
+        end
+        object edt_numero: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 1
+          MaxLength = 11
+          TextSettings.Font.Family = 'Franklin Gothic'
+          TextSettings.Font.Size = 20.000000000000000000
+          Size.Width = 367.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Digite o N'#250'mero'
+          StyledSettings = [Style, FontColor]
+        end
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Top
+      Fill.Color = xFF075E54
+      Margins.Top = 10.000000000000000000
+      Position.Y = 67.000000000000000000
+      Size.Width = 486.000000000000000000
+      Size.Height = 174.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Layout3: TLayout
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 466.000000000000000000
+        Size.Height = 154.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Text3: TText
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 446.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Mensagem'
+          TextSettings.Font.Family = 'Franklin Gothic'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Leading
+        end
+        object edt_mensagem: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          StyledSettings = [Style, FontColor]
+          TextSettings.Font.Family = 'Franklin Gothic'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = True
+          Align = Client
+          Size.Width = 466.000000000000000000
+          Size.Height = 113.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Viewport.Width = 462.000000000000000000
+          Viewport.Height = 109.000000000000000000
+        end
+      end
+    end
+    object Rectangle3: TRectangle
+      Align = Top
+      Fill.Color = xFF075E54
+      Margins.Top = 10.000000000000000000
+      Position.Y = 251.000000000000000000
+      Size.Width = 486.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Layout4: TLayout
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 466.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btn_enviar: TColorButton
+          Align = Client
+          Color = xFF128C7E
+          Size.Width = 466.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'colorbuttonstyle'
+          TabOrder = 1
+          OnClick = btn_enviarClick
+          object Text4: TText
+            Align = Center
+            HitTest = False
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 88.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'ENVIAR'
+            TextSettings.Font.Family = 'Franklin Gothic'
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.FontColor = claWhite
+          end
+        end
+      end
+    end
+  end
+end
